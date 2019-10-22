@@ -1,0 +1,16 @@
+/* ## Button ## */
+.btn {
+   background-color: $teal;
+   padding: .5em 1em;
+   border: .15em solid $deph-blue;
+   border-radius: 3px;
+
+   font-size: 1rem;
+   color: #fff;
+
+   transition: .2s ease-in-out;
+
+   &:hover {
+      background-color: $deph-blue;
+   }
+}
