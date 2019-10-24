@@ -3,35 +3,116 @@
 /* variables */
 /* ## Login ## */
 .login {
+  background-color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 2rem 3rem;
-  border: 2px solid lightgrey;
+  padding: 2rem 3rem 3rem;
+  border: 2px solid #eeeeee;
   border-radius: 5px;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  -webkit-box-shadow: 0 8px 5px #eeeeee;
+          box-shadow: 0 8px 5px #eeeeee;
 }
 
-/* ## Button ## */
-.btn {
-  background-color: #13A190;
-  padding: .5em 1em;
-  border: 0.15em solid #35364A;
-  border-radius: 3px;
-  font-size: 1rem;
-  color: #fff;
+.login__close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background-color: transparent;
+  border: 0;
+}
+
+.login__close:focus {
+  outline: 0;
+}
+
+.login__field {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.login__label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
 
-.btn:hover {
+.login__input {
+  display: block;
+  border: 0;
+  border-bottom: 1px solid lightgrey;
+  width: 13rem;
+  padding: .5rem;
+}
+
+.login__input:focus {
+  outline: 0;
+}
+
+.login__input:focus + .login__label {
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+}
+
+/* ## Button ## */
+.btn {
+  background-color: #0098fd;
+  margin-top: 1.5rem;
+  padding: .5em 1em;
+  border: 0.15em solid #35364A;
+  border-radius: 3px;
+  font-size: 1rem;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.btn:hover, .btn.active {
   background-color: #35364A;
+  color: #fff;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn-group .btn:first-of-type {
+  margin-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-group .btn:last-of-type {
+  margin-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #0098fd;
+}
+
+.btn-group .btn:last-of-type:hover, .btn-group .btn:last-of-type.active {
+  background-color: #0098fd;
+  color: #fff;
 }
 
 /* ### global ###"*/
 body {
   font-family: "Roboto", sans-serif;
   color: #35364A;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+button {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

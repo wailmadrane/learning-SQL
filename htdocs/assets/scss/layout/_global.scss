@@ -4,3 +4,11 @@ body {
    color: $deph-blue;
 }
 
+.hide {
+   visibility: hidden;
+   opacity: 0;
+}
+
+button {
+   cursor: pointer;
+}
