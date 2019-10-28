@@ -1,0 +1,11 @@
+.success {
+   border: 1px solid $success;
+   color: $success;
+   background-color: transparentize($success, .95);
+}
+.success-message {
+   text-align: center;
+   padding: 2rem;
+   border-radius: 5px;
+   margin: .5rem 0;
+}

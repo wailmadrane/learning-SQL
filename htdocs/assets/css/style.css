@@ -57,7 +57,9 @@
   outline: 0;
 }
 
-.login__input:focus + .login__label {
+.login__input:focus + .login__label,
+.login__input:valid + .login__label,
+.login__input.not-empty + .login__label {
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
 }
@@ -99,6 +101,32 @@
 .btn-group .btn:last-of-type:hover, .btn-group .btn:last-of-type.active {
   background-color: #0098fd;
   color: #fff;
+}
+
+.error {
+  border: 1px solid crimson;
+  color: crimson;
+  background-color: rgba(220, 20, 60, 0.05);
+}
+
+.error-message {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 5px;
+  margin: .5rem 0;
+}
+
+.success {
+  border: 1px solid limegreen;
+  color: limegreen;
+  background-color: rgba(50, 205, 50, 0.05);
+}
+
+.success-message {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 5px;
+  margin: .5rem 0;
 }
 
 /* ### global ###"*/

@@ -1,0 +1,11 @@
+.error {
+   border: 1px solid $error;
+   color: $error;
+   background-color: transparentize($error, .95);;
+}
+.error-message {
+   text-align: center;
+   padding: 2rem;
+   border-radius: 5px;
+   margin: .5rem 0;
+}
